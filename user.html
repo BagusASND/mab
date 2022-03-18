@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Promo Spring Look Book 2022 | MAB.Clo</title>
+    <title>Login | MAB.Clo</title>
     <link rel="icon" type="image/x-icon" href="dist/img/logo-primary.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -167,7 +167,7 @@
         <div class="container">
             <div class="body-heading">
                 <div class="d-flex account-menu align-items-center">
-                    <a href="promo.html" class="btn btn-sm position-relative text-xlg py-0 ps-0">
+                    <a href="/" class="btn btn-sm position-relative text-xlg py-0 ps-0">
                         <i class="icofont-rounded-left"></i>
                     </a>
                     <div class="input-group me-3 rounded border overflow-hidden" data-bs-toggle="modal" data-bs-target="#searchDialog">
@@ -193,16 +193,14 @@
         </div>
     </header>
     <div class="changed-header shadow-sm d-md-none">
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center">
-                <a href="promo.html" class="btn btn-sm position-relative text-xlg py-0 ps-0">
-                    <i class="icofont-rounded-left"></i>
-                </a>
-                <span class="text-xlg">Promo Spring Look Book 2022</span>
-            </div>
+        <div class="d-flex align-items-center">
+            <a href="/" class="btn btn-sm position-relative text-xlg py-0 ps-0">
+                <i class="icofont-rounded-left"></i>
+            </a>
+            <span class="text-xlg">Masuk</span>
         </div>
     </div>
-    <div class="main-content bg-muted">
+    <div class="main-content">
         <div class="bg-primary d-md-none alert alert-dismissible fade show rounded-0 d-flex justify-content-between py-1 px-2 m-0">
             <p class="text-white text-xs my-2">Dapatkan potongan ongkos kirim Rp 10.000 dengan menggunakan kode voucher “<span class="fw8">REBRANDING2021</span>”</p>
             <button type="button" class="btn" data-bs-dismiss="alert" aria-label="Close">
@@ -211,80 +209,37 @@
         </div>
     
         <div class="container">
-            <div class="row py-md-5 py-sm-3 py-3">
-                <div class="col-12 col-sm-12 col-md-8">
-                    <div class="card rounded-lg border-0 mb-3">
-                        <div class="card-body">
-                            <img src="dist/assets/m-main-banner-3.png" class="w-100 rounded-lg mb-3">
-                            <p class="text-xlg d-none d-sm-none d-md-block fw5">Promo Spring Look Book 2022</p>
-                            <div class="d-flex d-md-none justify-content-between align-items-center mb-3">
-                                <p class="text-lg fw5 mb-0">Promo Spring Look Book 2022</p>
-                                <button type="button" class="btn p-0 text-lg text-muted" data-bs-toggle="modal" data-bs-target="#shareDialog">
-                                    <i class="icofont-share"></i>
-                                </button>
-                            </div>
-                            <div class="row border-bottom">
-                                <div class="col-12">
-                                    <ul class="nav nav-tabs default-tab border-0" id="promoTab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc" type="button" role="tab" aria-controls="desc" aria-selected="true">Deskripsi</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="tnc-tab" data-bs-toggle="tab" data-bs-target="#tnc" type="button" role="tab" aria-controls="tnc" aria-selected="false">Syarat & Ketentuan</button>
-                                        </li>
-                                    </ul>
+            <div class="row justify-content-center">
+                <div class="col-11 col-sm-10 col-md-8">
+                    <div class="row my-4 align-items-center">
+                        <div class="col-12 col-sm-12 col-md-6 pb-5">
+                            <p class="text-xlg fw6 mb-0">LOGIN</p>
+                            <p class="text-muted mb-5">Belum punya akun? daftar <a href="register.html" class="text-secondary fw6 text-decoration-none">disini</a></p>
+                            <div class="form-group mb-4">
+                                <label for="email" class="fw7 mb-1">Email</label>
+                                <div class="input-group border rounded overflow-hidden">
+                                    <input id="email" type="email" class="form-control text-sm border-0">
                                 </div>
                             </div>
-                            <div class="tab-content py-3" id="promoTabContent">
-                                <div class="tab-pane fade show active" id="desc" role="tabpanel" aria-labelledby="desc-tab">
-                                    <p class="mb-0">Dapatkan potongan diskon 20% promo spring look book.</p>
+                            <div class="form-group pb-4 mb-4">
+                                <label for="password" class="fw7 mb-1">Password</label>
+                                <div class="input-group border rounded overflow-hidden">
+                                    <input id="password" type="password" class="form-control text-sm border-0">
+                                    <span class="input-group-text bg-white text-muted border-0">
+                                        <i class="icofont-eye"></i>
+                                    </span>
                                 </div>
-                                <div class="tab-pane fade" id="tnc" role="tabpanel" aria-labelledby="tnc-tab">
-                                    <ol class="mb-0 ps-3">
-                                        <li>Berlaku untuk pembelian di atas Rp 250.000</li>
-                                        <li>Hanya berlaku untuk kategori tees & jaket</li>
-                                        <li>Kuota promo tersedia untuk 50 pembeli pertama</li>
-                                        <li>Promo dapat berubah sewaktu-waktu tanpa pemberitahuan terlebih dahulu</li>
-                                    </ol>
-                                </div>
+                                <a href="" class="text-sm text-tertiary text-decoration-none float-end mt-1">Lupa password?</a>
                             </div>
+                            <a href="account.html" class="btn btn-primary btn-sm w-100 d-none d-sm-none d-md-block">Masuk</a>
+                            <a href="account-menu.html" class="btn btn-primary btn-sm w-100 d-md-none">Masuk</a>
                         </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-4">
-                    <div class="card rounded-lg border-0 mb-3">
-                        <div class="card-body">
-                            <p class="fw8 mb-2">Kode promo</p>
-                            <div class="promo-ticket">
-                                <div class="content-ticket d-flex">
-                                    <span class="text-lg">SPRING2022</span>
-                                    <span class="text-secondary fw7">copy</span>
-                                </div>
-                            </div>
-                            <hr class="my-4" />
-                            <p class="fw8 mb-2">Periode promo</p>
-                            <span class="text-muted"><i class="icofont-ui-calendar me-1"></i> 10 - 31 Jan, 2022</span>
-                        </div>
-                    </div>
-                    <div class="card rounded-lg border-0 mb-3">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <span>Bagikan</span>
-                                <div class="ms-3 text-xlg">
-                                    <a href="" class="text-decoration-none px-1">
-                                        <i class="icofont-facebook default"></i>
-                                    </a>
-                                    <a href="" class="text-decoration-none px-1">
-                                        <i class="icofont-twitter default"></i>
-                                    </a>
-                                    <a href="" class="text-decoration-none px-1">
-                                        <i class="icofont-instagram default"></i>
-                                    </a>
-                                    <a href="" class="text-decoration-none px-1">
-                                        <i class="icofont-brand-whatsapp default"></i>
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="col-12 col-sm-12 col-md-6 pb-5 text-center">
+                            <span class="text-sm text-muted">atau</span>
+                            <p class="fw6 mt-4">Mau belanja tanpa login? Gunakan whatsapp</p>
+                            <a href="" class="btn btn-wa btn-sm px-5">
+                                <i class="icofont-brand-whatsapp"></i> Whatsapp
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -610,46 +565,6 @@
                         </h1>
                         <a href="/" class="text-decoration-none text-white fw5">Logout</a>
                     </li>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Share -->
-    <div class="modal fade fade-top bottom-fade" id="shareDialog" tabindex="-1" aria-labelledby="shareDialogLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-dialog-centered">
-            <div class="modal-content border-0 rounded-lg">
-                <div class="modal-header border-0">
-                    <h6 class="modal-title">Bagikan</h6>
-                    <button type="button" class="btn-close text-xs" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-3 text-center">
-                            <a href="" class="text-decoration-none">
-                                <i class="icofont-facebook default text-xlg"></i>
-                                <p class="text-xs text-muted mb-0 mt-1">Facebook</p>
-                            </a>
-                        </div>
-                        <div class="col-3 text-center">
-                            <a href="" class="text-decoration-none">
-                                <i class="icofont-twitter default text-xlg"></i>
-                                <p class="text-xs text-muted mb-0 mt-1">Twitter</p>
-                            </a>
-                        </div>
-                        <div class="col-3 text-center">
-                            <a href="" class="text-decoration-none">
-                                <i class="icofont-instagram default text-xlg"></i>
-                                <p class="text-xs text-muted mb-0 mt-1">Instagram</p>
-                            </a>
-                        </div>
-                        <div class="col-3 text-center">
-                            <a href="" class="text-decoration-none">
-                                <i class="icofont-brand-whatsapp default text-xlg"></i>
-                                <p class="text-xs text-muted mb-0 mt-1">Whatsapp</p>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

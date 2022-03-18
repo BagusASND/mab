@@ -282,6 +282,9 @@ footer .logo-footer {
     padding: 2px 17px;
     border-radius: 10px;
 }
+.fs-wrap .width-40 {
+    width: 40%;
+}
 
 .m-list-product .product-list-item {
     width: 40%;
@@ -479,6 +482,39 @@ footer .logo-footer {
     font-size: 22px;
     font-weight: 700;
 }
+.size-option {
+    width: fit-content;
+    padding: 0;
+    position: relative;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.size-option .form-check-input {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    border: solid 1px #A4A1A1;
+    background-image: none;
+    background-color: #ffffff;
+}
+.size-option .form-check-label {
+    position: absolute;
+    left: 0;
+    width: 32px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+.size-option .form-check-input:checked {
+    background-color: #FB9257;
+    border-color: #FB9257;
+    background-image: none;
+}
+.size-option .form-check-input:checked ~ .form-check-label {
+    color: #ffffff;
+}
 .detail-product-page .option-section li {
     border: solid 1px #A4A1A1;
     font-weight: 600;
@@ -647,6 +683,180 @@ footer .logo-footer {
     border-bottom: none;
 }
 
+/* .payment-items {
+    margin-bottom: 67px;
+} */
+.payment-items .payment-item-list .accordion-header .accordion-button {
+    font-size: 14px;
+    border: solid 1px #DEDEDE;
+    border-radius: 6px;
+    color: #444444;
+    padding: 10px 15px;
+}
+.payment-items .payment-item-list .accordion-header .accordion-button img {
+    height: 30px;
+    margin-right: 15px;
+}
+.payment-items .payment-item-list .accordion-header .accordion-button:not(.collapsed) {
+    border-color: #407BA6;
+    background-color: #ffffff;
+    color: #444444;
+    box-shadow: none;
+}
+.payment-items .payment-item-list .accordion-header .accordion-button::after {
+    display: none;
+}
+.payment-items .payment-item-list .accordion-header .accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+.payment-items .payment-item-list .accordion-collapse .accordion-body {
+    padding: 15px;
+    margin-top: 5px;
+}
+.payment-footer {
+    padding: 1rem 1rem;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 3;
+    box-shadow: 0 1px 14px #e7e7e7;
+}
+#paymentExpand.collapsed::after {
+    content: 'Detail';
+}
+#paymentExpand::after {
+    content: 'Tutup';
+}
+
+.voucher-validation .form-control {
+    text-transform: uppercase;
+}
+.voucher-validation .form-control:placeholder-shown ~ .input-group-text .btn {
+    pointer-events: none;
+    background-color: #dddddd !important;
+    border-color: #dddddd !important;
+}
+
+.form-address .form-check-input:checked ~ .form-check-label .card {
+    border-color: #FB9257;
+    background-color: #FFEFE7;
+}
+
+.acc-profile {
+    background-image: url('../img/acc profile.png');
+    background-size: cover;
+}
+.acc-profile .profile-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.acc-profile-menu ul li {
+    border-bottom: solid 1px #f0f0f0;
+    position: relative;
+    padding-right: 40px !important;
+}
+.acc-profile-menu ul li:last-child {
+    border-bottom: none;
+}
+.acc-profile-menu ul li::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    margin-top: -6px;
+    transform: rotate(45deg);
+    border-top: solid 2px #adadad;
+    border-right: solid 2px #adadad;
+    border-radius: 0 2px 0 0;
+}
+.acc-profile-menu ul li a img {
+    height: 20px;
+}
+.account-nav-tabs {
+    padding-bottom: 20px;
+}
+.account-nav-tabs a {
+    background-color: #f4f4f4;
+    color: #444444;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    border-radius: 12px;
+}
+.account-nav-tabs a.active {
+    background-color: #FB9257;
+    color: #ffffff;
+    box-shadow: 1px 7px 16px #fb9257a3;
+}
+.profile-form .profile-img {
+    width: 80px;
+}
+.menu-account a.active {
+    background-color: #F0F0F0;
+    border-right: solid 3px #FB9257;
+    border-radius: 6px 0 0 6px;
+}
+
+.datepicker-dropdown {
+    margin-top: 108px;
+    padding: 15px !important;
+    border-radius: 10px !important;
+    border-color: rgb(221, 221, 221) !important;
+    font-size: 13px;
+}
+.datepicker-dropdown .datepicker-days .table-condensed tbody tr td.active {
+    background-color: #61B0C9;
+    background-image: none;
+}
+.trans-img img {
+    height: 50px;
+    margin-left: -15px;
+    border: solid 1px #ededed;
+    border-radius: 50%;
+}
+.trans-img img:first-child {
+    margin-left: 0;
+}
+
+.detail-step li {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-left: 15px;
+    position: relative;
+}
+.detail-step li:last-child::after {
+    border-left: 0;
+}
+.detail-step li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -5px;
+    top: 4px;
+    background-color: #bababa;
+    border-radius: 50%;
+    z-index: 1;
+}
+.detail-step li::after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    border-left: dashed 1px #D2D2D2;
+    position: absolute;
+    top: 8px;
+    left: -1px;
+}
+.detail-step li.active-state::before {
+    background-color: #FB9257;
+    box-shadow: 0 0 10px #fb9257;
+}
+
 @media (max-width: 767px) {
     header .body-heading {
         padding: 10px 0;
@@ -724,5 +934,40 @@ footer .logo-footer {
     .address-dialog .modal-body ul {
         height: auto;
         overflow: unset;
+    }
+    .shipping-list .btn, .shipping-list .dropdown-menu {
+        width: 100%;
+    }
+
+    .payment-footer {
+        position: fixed;
+    }
+    .payment-items {
+        margin-bottom: 67px;
+    }
+    .payment-items.expand-for-footer {
+        margin-bottom: 248px;
+    }
+    .address-option-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: solid 1px #dddddd;
+    }
+    .datepicker-dropdown {
+        margin-top: 53px;
+    }
+    .account-nav-tabs {
+        position: fixed;
+        z-index: 9;
+        background-color: #ffffff;
+    }
+    .transaction-list-items {
+        margin-top: 70px;
     }
 }

@@ -217,7 +217,7 @@
                             <img src="dist/assets/b4732221-79a4-4262-8e92-477aff2020af.jpeg" class="w-100">
                         </div>
                     </div>
-                    <div class="slider-nav d-none d-sm-none d-md-block">
+                    <div class="slider-nav d-none d-sm-none d-md-block mb-3">
                         <div>
                             <img src="dist/assets/17f4545d-9f33-454b-bb31-92ae86062240.jpeg" class="w-100">
                         </div>
@@ -229,6 +229,21 @@
                         </div>
                         <div>
                             <img src="dist/assets/b4732221-79a4-4262-8e92-477aff2020af.jpeg" class="w-100">
+                        </div>
+                    </div>
+                    <div class="fs-wrap rounded-lg mb-3">
+                        <img src="dist/img/fs-wrap-bg.png">
+                        <div class="d-flex justify-content-between align-items-center p-2">
+                            <div class="px-2 width-40">
+                                <p class="mb-0 text-sm text-white">Sisa Produk</p>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="mb-0 text-sm text-center text-white">Sisa Waktu</p>
+                                <span class="time-stamp text-sm fw7">03:20:07</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -263,20 +278,24 @@
                     </section>
                     <section class="mt-4">
                         <p class="fw7 mb-2">Ukuran Tersedia</p>
-                        <ul class="option-section list-unstyled d-flex">
-                            <li class="active">
-                                <span>S</span>
-                            </li>
-                            <li>
-                                <span>M</span>
-                            </li>
-                            <li>
-                                <span>L</span>
-                            </li>
-                            <li>
-                                <span>XL</span>
-                            </li>
-                        </ul>
+                        <div class="d-flex mb-4">
+                            <div class="form-check size-option">
+                                <input class="form-check-input" type="radio" name="sizingOption" id="sizingOption1" value="option1">
+                                <label class="form-check-label" for="sizingOption1">S</label>
+                            </div>
+                            <div class="form-check size-option">
+                                <input class="form-check-input" type="radio" name="sizingOption" id="sizingOption2" value="option2">
+                                <label class="form-check-label" for="sizingOption2">M</label>
+                            </div>
+                            <div class="form-check size-option">
+                                <input class="form-check-input" type="radio" name="sizingOption" id="sizingOption3" value="option3">
+                                <label class="form-check-label" for="sizingOption3">L</label>
+                            </div>
+                            <div class="form-check size-option">
+                                <input class="form-check-input" type="radio" name="sizingOption" id="sizingOption4" value="option4">
+                                <label class="form-check-label" for="sizingOption4">XL</label>
+                            </div>
+                        </div>
                     </section>
                     <section>
                         <p class="fw7 mb-2">Pengiriman</p>
@@ -305,16 +324,17 @@
                         <p class="fw7 mb-2">Quantity</p>
                         <div class="d-flex align-items-center">
                             <div class="input-group qty-set me-3">
-                                <span class="input-group-text">
+                                <span class="input-group-text" onclick="qtyMin()">
                                     <i class="icofont-minus"></i>
                                 </span>
-                                <input type="text" class="form-control" value="1">
-                                <span class="input-group-text">
+                                <input id="qtyVal" type="number" class="form-control" value="1" oninput="validate(this.value)">
+                                <span class="input-group-text" onclick="qtyPlus()">
                                     <i class="icofont-plus"></i>
                                 </span>
                             </div>
                             <p class="mb-0">Total Harga: <span class="fw6 text-secondary">Rp 64.000</span></p>
                         </div>
+                        <span class="text-danger text-xs d-none qtyalert">Minimal beli 1</span>
                         <div class="row align-items-center mt-3">
                             <div class="col-6 border-end">
                                 <button type="button" class="btn btn-primary-outline w-100 mb-2" id="CartToastBtn">Tambah ke Keranjang</button>
@@ -1182,6 +1202,30 @@
 
                 toast.show()
             })
+        }
+
+        function qtyPlus() {
+            var value = parseInt(document.getElementById('qtyVal').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('qtyVal').value = value;
+            $('.qtyalert').addClass('d-none');
+        }
+        function qtyMin() {
+            var value = parseInt(document.getElementById('qtyVal').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value--;
+            document.getElementById('qtyVal').value = value;
+            $('.qtyalert').addClass('d-none');
+        }
+        function validate(elVal){
+            if(elVal == '' || elVal.trim() == '') {
+                $('.qtyalert').removeClass('d-none');
+
+            }
+            else if(elVal > 0 || elVal.trim() > 0) {
+                $('.qtyalert').addClass('d-none');
+            }
         }
     </script>
   </body>

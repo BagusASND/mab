@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Promo Spring Look Book 2022 | MAB.Clo</title>
+    <title>Akun Saya - Daftar Transaksi | MAB.Clo</title>
     <link rel="icon" type="image/x-icon" href="dist/img/logo-primary.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -17,6 +17,7 @@
     <!-- Plugin -->
     <link rel="stylesheet" type="text/css" href="dist/plugin/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="dist/plugin/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -163,28 +164,16 @@
             </div>
         </div>
     </header>
-    <header class="d-md-none bg-white">
+    <header class="d-md-none bg-white shadow-none">
         <div class="container">
             <div class="body-heading">
-                <div class="d-flex account-menu align-items-center">
-                    <a href="promo.html" class="btn btn-sm position-relative text-xlg py-0 ps-0">
-                        <i class="icofont-rounded-left"></i>
-                    </a>
-                    <div class="input-group me-3 rounded border overflow-hidden" data-bs-toggle="modal" data-bs-target="#searchDialog">
-                        <span class="input-group-text bg-white border-0 text-sm px-2 text-muted">
-                            <i class="icofont-search"></i>
-                        </span>
-                        <input type="text" class="form-control border-0 text-sm ps-0 bg-white" placeholder="Cari disini..." aria-label="Cari disini..." readonly>
+                <div class="d-flex account-menu align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <a href="account-menu.html" class="btn btn-sm position-relative text-xlg py-0 ps-0">
+                            <i class="icofont-rounded-left"></i>
+                        </a>
+                        <span class="text-xlg">Daftar Transaksi</span>
                     </div>
-                    <button type="button" class="btn btn-sm position-relative" data-bs-toggle="modal" data-bs-target="#cartProduct">
-                        <img src="dist/img/icon/bag.png">
-                        <span class="position-absolute badge rounded-pill">9
-                            <span class="visually-hidden">item in cart</span>
-                        </span>
-                    </button>
-                    <a href="wishlist.html" class="btn btn-sm position-relative">
-                        <img src="dist/img/icon/wishlist.png">
-                    </a>
                     <button type="button" class="btn btn-sm position-relative" data-bs-toggle="modal" data-bs-target="#sideMenu">
                         <img src="dist/img/icon/bars.png">
                     </button>
@@ -192,98 +181,180 @@
             </div>
         </div>
     </header>
-    <div class="changed-header shadow-sm d-md-none">
-        <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center">
-                <a href="promo.html" class="btn btn-sm position-relative text-xlg py-0 ps-0">
-                    <i class="icofont-rounded-left"></i>
-                </a>
-                <span class="text-xlg">Promo Spring Look Book 2022</span>
-            </div>
-        </div>
-    </div>
-    <div class="main-content bg-muted">
-        <div class="bg-primary d-md-none alert alert-dismissible fade show rounded-0 d-flex justify-content-between py-1 px-2 m-0">
-            <p class="text-white text-xs my-2">Dapatkan potongan ongkos kirim Rp 10.000 dengan menggunakan kode voucher “<span class="fw8">REBRANDING2021</span>”</p>
-            <button type="button" class="btn" data-bs-dismiss="alert" aria-label="Close">
-                <i class="icofont-close-line"></i>
-            </button>
-        </div>
-    
+    <div class="main-content">
         <div class="container">
-            <div class="row py-md-5 py-sm-3 py-3">
-                <div class="col-12 col-sm-12 col-md-8">
-                    <div class="card rounded-lg border-0 mb-3">
-                        <div class="card-body">
-                            <img src="dist/assets/m-main-banner-3.png" class="w-100 rounded-lg mb-3">
-                            <p class="text-xlg d-none d-sm-none d-md-block fw5">Promo Spring Look Book 2022</p>
-                            <div class="d-flex d-md-none justify-content-between align-items-center mb-3">
-                                <p class="text-lg fw5 mb-0">Promo Spring Look Book 2022</p>
-                                <button type="button" class="btn p-0 text-lg text-muted" data-bs-toggle="modal" data-bs-target="#shareDialog">
-                                    <i class="icofont-share"></i>
-                                </button>
-                            </div>
-                            <div class="row border-bottom">
-                                <div class="col-12">
-                                    <ul class="nav nav-tabs default-tab border-0" id="promoTab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc" type="button" role="tab" aria-controls="desc" aria-selected="true">Deskripsi</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="tnc-tab" data-bs-toggle="tab" data-bs-target="#tnc" type="button" role="tab" aria-controls="tnc" aria-selected="false">Syarat & Ketentuan</button>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="tab-content py-3" id="promoTabContent">
-                                <div class="tab-pane fade show active" id="desc" role="tabpanel" aria-labelledby="desc-tab">
-                                    <p class="mb-0">Dapatkan potongan diskon 20% promo spring look book.</p>
-                                </div>
-                                <div class="tab-pane fade" id="tnc" role="tabpanel" aria-labelledby="tnc-tab">
-                                    <ol class="mb-0 ps-3">
-                                        <li>Berlaku untuk pembelian di atas Rp 250.000</li>
-                                        <li>Hanya berlaku untuk kategori tees & jaket</li>
-                                        <li>Kuota promo tersedia untuk 50 pembeli pertama</li>
-                                        <li>Promo dapat berubah sewaktu-waktu tanpa pemberitahuan terlebih dahulu</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row mb-5">
+                <div class="col-md-3 d-none d-sm-none d-md-block pe-0">
+                    <p class="text-lg fw6 my-5">Akun Profil</p>
+                    <ul class="list-unstyled mb-0 menu-account">
+                        <li>
+                            <a href="account.html" class="text-decoration-none text-muted fw5 d-block p-3">
+                                <img src="dist/img/icon/user.png" class="h-20 me-3"> Info Profil
+                            </a>
+                        </li>
+                        <li>
+                            <a href="transaction-list.html" class="text-decoration-none text-muted fw5 d-block p-3 active">
+                                <img src="dist/img/icon/bag.png" class="h-20 me-3"> Daftar Transaksi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="wish-list.html" class="text-decoration-none text-muted fw5 d-block p-3">
+                                <img src="dist/img/icon/wishlist.png" class="h-20 me-3"> Wishlist
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-12 col-sm-12 col-md-4">
-                    <div class="card rounded-lg border-0 mb-3">
-                        <div class="card-body">
-                            <p class="fw8 mb-2">Kode promo</p>
-                            <div class="promo-ticket">
-                                <div class="content-ticket d-flex">
-                                    <span class="text-lg">SPRING2022</span>
-                                    <span class="text-secondary fw7">copy</span>
-                                </div>
-                            </div>
-                            <hr class="my-4" />
-                            <p class="fw8 mb-2">Periode promo</p>
-                            <span class="text-muted"><i class="icofont-ui-calendar me-1"></i> 10 - 31 Jan, 2022</span>
+                <div class="col-12 col-sm-12 col-md-9 ps-md-5 border-start">
+                    <div class="row">
+                        <div class="account-nav-tabs d-flex mt-md-5 horizontal-scrolling pt-2">
+                            <a href="transaction-list.html" class="text-decoration-none me-3 px-4 active">Semua</a>
+                            <a href="transaction-list-waiting.html" class="text-decoration-none me-3 px-4">Menunggu Pembayaran</a>
+                            <a href="transaction-list-progress.html" class="text-decoration-none me-3 px-4">Dalam Proses</a>
+                            <a href="transaction-list-done.html" class="text-decoration-none me-3 px-4">Selesai</a>
+                            <a href="transaction-list-cancel.html" class="text-decoration-none me-3 px-4">Batal</a>
                         </div>
                     </div>
-                    <div class="card rounded-lg border-0 mb-3">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <span>Bagikan</span>
-                                <div class="ms-3 text-xlg">
-                                    <a href="" class="text-decoration-none px-1">
-                                        <i class="icofont-facebook default"></i>
-                                    </a>
-                                    <a href="" class="text-decoration-none px-1">
-                                        <i class="icofont-twitter default"></i>
-                                    </a>
-                                    <a href="" class="text-decoration-none px-1">
-                                        <i class="icofont-instagram default"></i>
-                                    </a>
-                                    <a href="" class="text-decoration-none px-1">
-                                        <i class="icofont-brand-whatsapp default"></i>
-                                    </a>
+                    <div class="row transaction-list-items">
+                        <div class="col-12">
+                            <div class="card rounded-lg px-3 py-2 mb-3">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <i class="icofont-ui-calendar text-secondary text-xlg"></i>
+                                        <div class="text-xs ms-2">
+                                            <span class="fw7">17 Des 2021</span>
+                                            <p class="text-muted fw3 mb-0">INVOICENUMBER0001</p>
+                                        </div>
+                                    </div>
+                                    <span class="badge bg-warning">Dalam proses</span>
                                 </div>
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 col-sm-12 col-12">
+                                        <div class="d-flex my-3">
+                                            <div class="trans-img d-flex">
+                                                <img src="dist/assets/17f4545d-9f33-454b-bb31-92ae86062240.jpeg">
+                                                <img src="dist/assets/b4732221-79a4-4262-8e92-477aff2020af.jpeg">
+                                            </div>
+                                            <div class="ms-3">
+                                                <p class="mb-0">OFFLINE T-shirt short sleeve - White</p>
+                                                <span class="text-xs text-muted">+1 produk lagi</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-6 text-md-end">
+                                        <span class="text-muted text-xs">Total Belanja</span>
+                                        <p class="mb-0 fw6">Rp 203.256</p>
+                                    </div>
+                                    <div class="col-md-12 col-sm-6 col-6 text-end">
+                                        <button type="button" class="btn btn-sm px-4 d-none d-sm-none d-md-inline text-secondary" data-bs-toggle="modal" data-bs-target="#transDetail">Lihat Detail</button>
+                                        <button type="button" class="btn btn-primary btn-sm px-4 position-relative" id="rebuyToast" style="z-index: 1;">Beli Lagi</button>
+                                    </div>
+                                </div>
+                                <div class="position-absolute w-100 h-100 top-0 start-0 d-md-none" data-bs-toggle="modal" data-bs-target="#transDetail"></div>
+                            </div>
+                            <div class="card rounded-lg px-3 py-2 mb-3">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <i class="icofont-ui-calendar text-secondary text-xlg"></i>
+                                        <div class="text-xs ms-2">
+                                            <span class="fw7">17 Des 2021</span>
+                                            <p class="text-muted fw3 mb-0">INVOICENUMBER0001</p>
+                                        </div>
+                                    </div>
+                                    <span class="badge bg-success">Selesai</span>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 col-sm-12 col-12">
+                                        <div class="d-flex my-3">
+                                            <div class="trans-img d-flex">
+                                                <img src="dist/assets/17f4545d-9f33-454b-bb31-92ae86062240.jpeg">
+                                                <img src="dist/assets/b4732221-79a4-4262-8e92-477aff2020af.jpeg">
+                                            </div>
+                                            <div class="ms-3">
+                                                <p class="mb-0">OFFLINE T-shirt short sleeve - White</p>
+                                                <span class="text-xs text-muted">+1 produk lagi</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-6 text-md-end">
+                                        <span class="text-muted text-xs">Total Belanja</span>
+                                        <p class="mb-0 fw6">Rp 203.256</p>
+                                    </div>
+                                    <div class="col-md-12 col-sm-6 col-6 text-end">
+                                        <button type="button" class="btn btn-sm px-4 d-none d-sm-none d-md-inline text-secondary" data-bs-toggle="modal" data-bs-target="#transDetail">Lihat Detail</button>
+                                        <button type="button" class="btn btn-primary btn-sm px-4 position-relative" id="rebuyToast" style="z-index: 1;">Beli Lagi</button>
+                                    </div>
+                                </div>
+                                <div class="position-absolute w-100 h-100 top-0 start-0 d-md-none" data-bs-toggle="modal" data-bs-target="#transDetail"></div>
+                            </div>
+                            <div class="card rounded-lg px-3 py-2 mb-3">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <i class="icofont-ui-calendar text-secondary text-xlg"></i>
+                                        <div class="text-xs ms-2">
+                                            <span class="fw7">17 Des 2021</span>
+                                            <p class="text-muted fw3 mb-0">INVOICENUMBER0001</p>
+                                        </div>
+                                    </div>
+                                    <span class="badge bg-danger">Batal</span>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 col-sm-12 col-12">
+                                        <div class="d-flex my-3">
+                                            <div class="trans-img d-flex">
+                                                <img src="dist/assets/17f4545d-9f33-454b-bb31-92ae86062240.jpeg">
+                                                <img src="dist/assets/b4732221-79a4-4262-8e92-477aff2020af.jpeg">
+                                            </div>
+                                            <div class="ms-3">
+                                                <p class="mb-0">OFFLINE T-shirt short sleeve - White</p>
+                                                <span class="text-xs text-muted">+1 produk lagi</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-6 text-md-end">
+                                        <span class="text-muted text-xs">Total Belanja</span>
+                                        <p class="mb-0 fw6">Rp 203.256</p>
+                                    </div>
+                                    <div class="col-md-12 col-sm-6 col-6 text-end">
+                                        <button type="button" class="btn btn-sm px-4 d-none d-sm-none d-md-inline text-secondary" data-bs-toggle="modal" data-bs-target="#transDetail">Lihat Detail</button>
+                                        <button type="button" class="btn btn-primary btn-sm px-4 position-relative" id="rebuyToast" style="z-index: 1;">Beli Lagi</button>
+                                    </div>
+                                </div>
+                                <div class="position-absolute w-100 h-100 top-0 start-0 d-md-none" data-bs-toggle="modal" data-bs-target="#transDetail"></div>
+                            </div>
+                            <div class="card rounded-lg px-3 py-2 mb-3">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <i class="icofont-ui-calendar text-secondary text-xlg"></i>
+                                        <div class="text-xs ms-2">
+                                            <span class="fw7">17 Des 2021</span>
+                                            <p class="text-muted fw3 mb-0">INVOICENUMBER0001</p>
+                                        </div>
+                                    </div>
+                                    <span class="badge bg-warning">Belum dibayar</span>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 col-sm-12 col-12">
+                                        <div class="d-flex my-3">
+                                            <div class="trans-img d-flex">
+                                                <img src="dist/assets/17f4545d-9f33-454b-bb31-92ae86062240.jpeg">
+                                                <img src="dist/assets/b4732221-79a4-4262-8e92-477aff2020af.jpeg">
+                                            </div>
+                                            <div class="ms-3">
+                                                <p class="mb-0">OFFLINE T-shirt short sleeve - White</p>
+                                                <span class="text-xs text-muted">+1 produk lagi</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-6 text-md-end">
+                                        <span class="text-muted text-xs">Total Belanja</span>
+                                        <p class="mb-0 fw6">Rp 203.256</p>
+                                    </div>
+                                    <div class="col-md-12 col-sm-6 col-6 text-end">
+                                        <button type="button" class="btn btn-sm px-4 d-none d-sm-none d-md-inline text-secondary" data-bs-toggle="modal" data-bs-target="#transDetail">Lihat Detail</button>
+                                        <button type="button" class="btn btn-primary btn-sm px-4 position-relative" id="rebuyToast" style="z-index: 1;">Beli Lagi</button>
+                                    </div>
+                                </div>
+                                <div class="position-absolute w-100 h-100 top-0 start-0 d-md-none" data-bs-toggle="modal" data-bs-target="#transDetail"></div>
                             </div>
                         </div>
                     </div>
@@ -362,52 +433,6 @@
         <hr class="mb-0">
         <p class="text-center text-white text-sm fw2 mb-0 py-4">Copyright &copy; 2022, MABClo.</p>
     </footer>
-
-    <!-- Search -->
-    <div class="modal fade fade-left full-sheet" id="searchDialog" tabindex="-1" aria-labelledby="searchDialogLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content border-0 rounded-lg">
-                <div class="modal-header">
-                    <button type="button" class="btn text-xlg p-0 me-2 text-primary mClearSearch" data-bs-dismiss="modal">
-                        <i class="icofont-arrow-left"></i>
-                    </button>
-                    <div class="input-group search-input-group">
-                        <span class="input-group-text text-sm bg-white border-0 text-muted">
-                            <i class="icofont-search"></i>
-                        </span>
-                        <input id="mSearchField" type="text" class="form-control text-sm ps-0 border-0" placeholder="Cari disini..." aria-label="Cari disini...">
-                        <span class="input-group-text bg-white border-0 text-muted">
-                            <i class="icofont-close-line-circled mClearSearch"></i>
-                        </span>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <ul class="list-unstyled">
-                        <li class="d-flex align-items-center py-2">
-                            <i class="icofont-search text-muted text-lg me-3"></i>
-                            <a href="" class="text-decoration-none text-primary fw5">jaket sugestion</a>
-                        </li>
-                        <li class="d-flex align-items-center py-2">
-                            <i class="icofont-search text-muted text-lg me-3"></i>
-                            <a href="" class="text-decoration-none text-primary fw5">topi sugestion</a>
-                        </li>
-                        <li class="d-flex align-items-center py-2">
-                            <i class="icofont-search text-muted text-lg me-3"></i>
-                            <a href="" class="text-decoration-none text-primary fw5">sweater sugestion</a>
-                        </li>
-                        <li class="d-flex align-items-center py-2">
-                            <i class="icofont-search text-muted text-lg me-3"></i>
-                            <a href="" class="text-decoration-none text-primary fw5">celana sugestion</a>
-                        </li>
-                        <li class="d-flex align-items-center py-2">
-                            <i class="icofont-search text-muted text-lg me-3"></i>
-                            <a href="" class="text-decoration-none text-primary fw5">tees sugestion</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Cart -->
     <div class="modal fade fade-top full-sheet" id="cartProduct" tabindex="-1" aria-labelledby="cartProductLabel" aria-hidden="true">
@@ -540,7 +565,7 @@
                             <button type="button" class="btn btn-primary-outline">Belanja Lagi</button>
                         </div>
                         <div class="col-6 ps-1 d-grid">
-                            <button type="button" class="btn btn-primary">Checkout</button>
+                            <a href="checkout.html" class="btn btn-primary">Checkout</a>
                         </div>
                     </div>
                 </div>
@@ -551,7 +576,7 @@
                             <p class="mb-0 fw7 text-lg">Rp 208.000</p>
                         </div>
                         <div class="col-6 d-grid">
-                            <a href="checkout" type="button" class="btn btn-primary rounded">Checkout</a>
+                            <a href="checkout.html" type="button" class="btn btn-primary rounded">Checkout</a>
                         </div>
                     </div>
                 </div>
@@ -615,43 +640,176 @@
         </div>
     </div>
 
-    <!-- Share -->
-    <div class="modal fade fade-top bottom-fade" id="shareDialog" tabindex="-1" aria-labelledby="shareDialogLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-dialog-centered">
-            <div class="modal-content border-0 rounded-lg">
+    <!-- Detail Transaksi -->
+    <div class="modal fade fade-top full-sheet" id="transDetail" tabindex="-1" aria-labelledby="transDetailLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0 rounded-lg">
                 <div class="modal-header border-0">
-                    <h6 class="modal-title">Bagikan</h6>
-                    <button type="button" class="btn-close text-xs" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h6 class="modal-title d-flex" id="exampleModalLabel">
+                        <span>Detail Transaksi</span>
+                    </h6>
+                <button type="button" class="btn-close text-xs" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                    <div class="row align-items-center text-sm mb-2">
+                        <div class="col-6">
+                            <p class="mb-0 text-muted">No. Invoice</p>
+                        </div>
+                        <div class="col-6 text-end">
+                            <p class="mb-0 fw6 text-secondary">INVOICENUMBER0001</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center text-sm mb-2">
+                        <div class="col-6">
+                            <p class="mb-0 text-muted">Tanggal Pembelian</p>
+                        </div>
+                        <div class="col-6 text-end">
+                            <p class="mb-0">3 Januari 2022, 17:06 WIB</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center text-sm mb-2">
+                        <div class="col-6">
+                            <p class="mb-0 text-muted">Status Pembelian</p>
+                        </div>
+                        <div class="col-6 text-end">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <span class="badge bg-warning">Dalam proses</span>
+                                <span class="text-secondary text-xs fw6 ms-3 cursor-pointer" data-bs-toggle="collapse" data-bs-target="#statusOrder" aria-expanded="false" aria-controls="statusOrder">Detail <i class="icofont-simple-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="collapse pt-3" id="statusOrder">
+                                <div class="card card-body rounded">
+                                  <ul class="list-unstyled detail-step mb-0">
+                                        <li class="">
+                                            <p class="mb-0 text-muted">4 Januari 2022, 15:37 WIB</p>
+                                            <p class="mb-0 fw7">Pesanan Selesai</p>
+                                        </li>
+                                        <li class="active-state">
+                                            <p class="mb-0 text-muted">3 Januari 2022, 19:00 WIB</p>
+                                            <p class="mb-0 fw7">Pesanan Dikirim</p>
+                                        </li>
+                                        <li class="">
+                                            <p class="mb-0 text-muted">3 Januari 2022, 18:20 WIB</p>
+                                            <p class="mb-0 fw7">Pesanan Terkonfirmasi</p>
+                                        </li>
+                                        <li class="">
+                                            <p class="mb-0 text-muted">3 Januari 2022, 17:06 WIB</p>
+                                            <p class="mb-0 fw7">Pesanan Dibuat</p>
+                                        </li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="dashed" />
+                    <p class="fw7 mb-4">Detail Produk</p>
                     <div class="row">
-                        <div class="col-3 text-center">
-                            <a href="" class="text-decoration-none">
-                                <i class="icofont-facebook default text-xlg"></i>
-                                <p class="text-xs text-muted mb-0 mt-1">Facebook</p>
-                            </a>
+                        <div class="col-12">
+                            <ul class="item-checkout list-unstyled mb-0">
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <img src="dist/assets/17f4545d-9f33-454b-bb31-92ae86062240.jpeg">
+                                        <div class="row w-100">
+                                            <div class="col-12 col-sm-12 col-md-9">
+                                                <p class="mb-1 text-sm">SKULL T-shirt short sleeve - Navy | All Size</p>
+                                                <p class="mb-1 text-sm text-muted">1 item (500 g)</p>
+                                                <p class="mb-0 fw6 text-sm">Rp 80.000</p>
+                                                <p class="mb-0 text-lg fw6">Rp 80.000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <img src="dist/assets/b4732221-79a4-4262-8e92-477aff2020af.jpeg">
+                                        <div class="row w-100">
+                                            <div class="col-12 col-sm-12 col-md-9">
+                                                <p class="mb-1 text-sm">OFFLINE T-shirt short sleeve - White | All size</p>
+                                                <p class="mb-1 text-sm text-muted">2 item (1 kg)</p>
+                                                <p class="mb-0 fw6 text-sm"><span class="text-muted text-decoration-line-through fw4 me-2">Rp 80.000</span> Rp 64.000</p>
+                                                <p class="mb-0 text-lg fw6">Rp 128.000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-3 text-center">
-                            <a href="" class="text-decoration-none">
-                                <i class="icofont-twitter default text-xlg"></i>
-                                <p class="text-xs text-muted mb-0 mt-1">Twitter</p>
-                            </a>
+                    </div>
+                    <hr class="dashed" />
+                    <p class="fw7 mb-4">Info Pengiriman</p>
+                    <div class="row text-sm mb-3">
+                        <div class="col-3 text-muted">Kurir</div>
+                        <div class="col-9">JNE - JNE OKE</div>
+                    </div>
+                    <div class="row text-sm mb-3">
+                        <div class="col-3 text-muted">No. Resi</div>
+                        <div class="col-9">0092876473674 <i class="icofont-ui-copy ms-2 cursor-pointer" id="copyResi"></i></div>
+                    </div>
+                    <div class="row text-sm mb-3">
+                        <div class="col-3 text-muted">Alamat</div>
+                        <div class="col-9">
+                            <p class="mb-0 fw6">Bagus Arisandi</p>
+                            <p class="mb-0">087844658832</p>
+                            <p class="mb-0">Jl. Ragil Kp Bojong Tengah No. 77, RT 005/006, Bantarsari, Rancabungur, Kab. Bogor, Jawa Barat 16310</p>
                         </div>
-                        <div class="col-3 text-center">
-                            <a href="" class="text-decoration-none">
-                                <i class="icofont-instagram default text-xlg"></i>
-                                <p class="text-xs text-muted mb-0 mt-1">Instagram</p>
-                            </a>
-                        </div>
-                        <div class="col-3 text-center">
-                            <a href="" class="text-decoration-none">
-                                <i class="icofont-brand-whatsapp default text-xlg"></i>
-                                <p class="text-xs text-muted mb-0 mt-1">Whatsapp</p>
-                            </a>
+                    </div>
+                    <hr class="dashed" />
+                    <p class="fw7 mb-4">Detail Pembayaran</p>
+                    <div class="row text-sm mb-2">
+                        <div class="col-6 text-muted">Metode Pembayaran</div>
+                        <div class="col-6 text-end fw6">Transfer Bank BCA</div>
+                    </div>
+                    <div class="row text-sm mb-2">
+                        <div class="col-6 text-muted">Total Harga</div>
+                        <div class="col-6 text-end fw6">Rp 208.000</div>
+                    </div>
+                    <div class="row text-sm mb-2">
+                        <div class="col-6 text-muted">Kode Unik</div>
+                        <div class="col-6 text-end fw6">Rp 256</div>
+                    </div>
+                    <div class="row text-sm mb-2">
+                        <div class="col-6 text-muted">Box + Kartu Ucapan</div>
+                        <div class="col-6 text-end fw6">Rp 5.000</div>
+                    </div>
+                    <div class="row text-sm mb-2">
+                        <div class="col-6 text-muted">Ongkos Kirim</div>
+                        <div class="col-6 text-end fw6">Rp 20.000</div>
+                    </div>
+                    <div class="row text-sm mb-2">
+                        <div class="col-6 text-muted">Voucher</div>
+                        <div class="col-6 text-end fw6">-Rp 30.000</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card card-body bg-muted rounded-lg mb-md-3">
+                                <div class="row fw7">
+                                    <div class="col-6">Total Pembayaran</div>
+                                    <div class="col-6 text-end">Rp 203.256</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Toast Cart -->
+    <div class="position-fixed bottom-0 start-50 translate-middle" style="z-index: 11">
+        <div id="rebuyToastRespond" class="toast border-0 rounded-lg" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-body text-center">
+            Berhasil ditambahkan ke keranjang.
+          </div>
+        </div>
+    </div>
+
+    <!-- Toast Copy -->
+    <div class="position-fixed bottom-0 start-50 translate-middle" style="z-index: 1056">
+        <div id="copyResiRespond" class="toast border-0 rounded-lg" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-body text-center">
+            Nomor resi berhasil disalin
+          </div>
         </div>
     </div>
 
@@ -660,6 +818,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="dist/js/jquery-3.2.1.min.js"></script>
     <script src="dist/plugin/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="dist/js/mab.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#datepicker').datepicker({
+                format: 'dd/mm/yyyy',
+            });
+        });
+
+        var rebuyToast = document.getElementById('rebuyToast')
+        var rebuyToastRespond = document.getElementById('rebuyToastRespond')
+        if (rebuyToast) {
+            rebuyToast.addEventListener('click', function () {
+                var toast = new bootstrap.Toast(rebuyToastRespond)
+
+                toast.show()
+            })
+        }
+
+        var copyResi = document.getElementById('copyResi')
+        var copyResiRespond = document.getElementById('copyResiRespond')
+        if (copyResi) {
+            copyResi.addEventListener('click', function () {
+                var toast = new bootstrap.Toast(copyResiRespond)
+
+                toast.show()
+            })
+        }
+    </script>
   </body>
 </html>
