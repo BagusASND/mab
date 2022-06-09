@@ -62,8 +62,12 @@ a.disabled {
     background-color: #dddddd !important;
     border-color: #dddddd !important;
 }
+.btn-primary:disabled {
+    background-color: #f5c0a1;
+    border-color: #f5c0a1;
+}
 .btn-primary-outline {
-    background: transparent;
+    background: #ffffff;
     color: #FB9257;
     border-color: #FB9257;
 }

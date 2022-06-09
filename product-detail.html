@@ -269,29 +269,30 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <span class="text-xlg">Rp 64.000</span>
+                            <span class="text-xlg">Rp&nbsp;</span>
+                            <span class="text-xlg" id="price">64000</span>
                             <div class="ms-2">
                                 <span class="disc-label">-20%</span>
                             </div>
                         </div>
-                        <span class="text-decoration-line-through text-muted">Rp 80.000</span>
+                        <span class="text-decoration-line-through text-muted">Rp 80000</span>
                     </section>
                     <section class="mt-4">
                         <p class="fw7 mb-2">Ukuran Tersedia</p>
                         <div class="d-flex mb-4">
-                            <div class="form-check size-option">
+                            <div class="form-check size-option getAvailable">
                                 <input class="form-check-input" type="radio" name="sizingOption" id="sizingOption1" value="option1">
                                 <label class="form-check-label" for="sizingOption1">S</label>
                             </div>
-                            <div class="form-check size-option">
+                            <div class="form-check size-option getAvailable">
                                 <input class="form-check-input" type="radio" name="sizingOption" id="sizingOption2" value="option2">
                                 <label class="form-check-label" for="sizingOption2">M</label>
                             </div>
-                            <div class="form-check size-option">
+                            <div class="form-check size-option getAvailable">
                                 <input class="form-check-input" type="radio" name="sizingOption" id="sizingOption3" value="option3">
                                 <label class="form-check-label" for="sizingOption3">L</label>
                             </div>
-                            <div class="form-check size-option">
+                            <div class="form-check size-option getEmpty">
                                 <input class="form-check-input" type="radio" name="sizingOption" id="sizingOption4" value="option4">
                                 <label class="form-check-label" for="sizingOption4">XL</label>
                             </div>
@@ -320,25 +321,29 @@
                         <p class="mb-0">Description product, disini deskripsi lengkap product, bisa diisi tentang jenis bahan, tabel ukuran, keterangan cara perawatan dan lain-lain.</p>
                     </section>
                     <hr class="my-4" />
-                    <section class="mt-4 d-none d-sm-none d-md-block">
+                    <section class="mt-4">
                         <p class="fw7 mb-2">Quantity</p>
                         <div class="d-flex align-items-center">
                             <div class="input-group qty-set me-3">
-                                <span class="input-group-text" onclick="qtyMin()">
+                                <span class="input-group-text" id="subtract">
                                     <i class="icofont-minus"></i>
                                 </span>
-                                <input id="qtyVal" type="number" class="form-control" value="1" oninput="validate(this.value)">
-                                <span class="input-group-text" onclick="qtyPlus()">
+                                <input type="number" name="qty" id="qty" class="form-control" value="1" readonly>
+                                <span class="input-group-text" id="add">
                                     <i class="icofont-plus"></i>
                                 </span>
                             </div>
-                            <p class="mb-0">Total Harga: <span class="fw6 text-secondary">Rp 64.000</span></p>
+                            <p class="mb-0">Total Harga:<br>
+                                <span class="fw6 text-secondary">Rp</span>
+                                <input type="text" class="fw6 text-secondary border-0" name="total" id="total" value="64000" readonly>
+                            </p>
                         </div>
-                        <span class="text-danger text-xs d-none qtyalert">Minimal beli 1</span>
+                        <span class="text-danger text-xs d-none stockAlert">Stok tidak tersedia</span>
+                        <div class="alert alert-warning" id="qtyRemind">Pilih ukuran terlebih dahulu</div>
                         <div class="row align-items-center mt-3">
-                            <div class="col-6 border-end">
-                                <button type="button" class="btn btn-primary-outline w-100 mb-2" id="CartToastBtn">Tambah ke Keranjang</button>
-                                <button type="button" class="btn btn-primary w-100">Beli Sekarang</button>
+                            <div class="col-6 border-end d-none d-sm-none d-md-block">
+                                <button type="button" class="btn btn-primary-outline w-100 mb-2" id="CartToastBtn" disabled>Tambah ke Keranjang</button>
+                                <button type="button" class="btn btn-primary w-100" id="buyBtn" disabled>Beli Sekarang</button>
                             </div>
                             <div class="position-fixed bottom-0 start-50 translate-middle-x p-3" style="z-index: 11">
                                 <div id="CartToast" class="toast cart-toast border-0 start-50 translate-middle-x rounded shadow position-relative" role="alert" aria-live="assertive" aria-atomic="true">
@@ -361,9 +366,13 @@
                                   </div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <p class="text-sm text-muted text-center mb-2">Beli via Whatsapp untuk pembelian tanpa login</p>
-                                <button type="button" class="btn btn-wa w-100"><i class="icofont-brand-whatsapp me-1"></i> Beli Sekarang</button>
+                            <div class="col-6 d-none d-sm-none d-md-block">
+                                <p class="text-sm text-muted text-center mb-2">Hubungi kami melalui tombol di bawah ini jika ada kendala.</p>
+                                <a href="" class="text-decoration-none text-primary">
+                                    <div class="card rounded">
+                                        <div class="card-body py-2 text-center"><i class="icofont-chat me-1"></i> Chat Kami</div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </section>
@@ -586,11 +595,11 @@
 
     <section class="m-atc shadow-lg d-md-none">
         <div class="d-flex p-2">
-            <a href="" class="btn btn-wa me-2">
-                <i class="icofont-brand-whatsapp"></i>
+            <a href="" class="btn border me-2">
+                <i class="icofont-chat"></i>
             </a>
-            <button type="button" class="btn btn-primary-outline w-100 me-1 text-md" id="mCartToast"><i class="icofont-plus"></i> Keranjang</button>
-            <a href="" class="btn btn-primary w-100 ms-1 text-md pt-2">Beli Sekarang</a>
+            <button type="button" class="btn btn-primary-outline w-100 me-1 text-md" id="mCartToast" disabled><i class="icofont-plus"></i> Keranjang</button>
+            <button type="button" class="btn btn-primary w-100 ms-1 text-md pt-2" id="mBuyBtn" disabled>Beli Sekarang</button>
         </div>
     </section>
     <div class="position-fixed bottom-0 start-50 translate-middle p-3" style="z-index: 11">
@@ -1159,6 +1168,12 @@
     <script src="dist/plugin/slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script src="dist/js/mab.js" type="text/javascript"></script>
     <script>
+        function codeLanding() {
+            $('.qty-set').addClass('d-none');
+            $('.qty-set ~ p').addClass('d-none');
+        }
+        window.onload = codeLanding;
+
          $('.product-image').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -1204,29 +1219,56 @@
             })
         }
 
-        function qtyPlus() {
-            var value = parseInt(document.getElementById('qtyVal').value, 10);
-            value = isNaN(value) ? 0 : value;
-            value++;
-            document.getElementById('qtyVal').value = value;
-            $('.qtyalert').addClass('d-none');
-        }
-        function qtyMin() {
-            var value = parseInt(document.getElementById('qtyVal').value, 10);
-            value = isNaN(value) ? 0 : value;
-            value--;
-            document.getElementById('qtyVal').value = value;
-            $('.qtyalert').addClass('d-none');
-        }
-        function validate(elVal){
-            if(elVal == '' || elVal.trim() == '') {
-                $('.qtyalert').removeClass('d-none');
+        $(function() {
+            var price = parseFloat($('#price').text());
 
-            }
-            else if(elVal > 0 || elVal.trim() > 0) {
-                $('.qtyalert').addClass('d-none');
-            }
-        }
+            $('#subtract').on("click",function() {
+                var $qty = $('#qty');
+                var current = parseInt($qty.val());
+                if ( current > 1 ) {
+                    $qty.val(current-1);
+                    $('#total').val(price*(current-1));
+                } else {
+                    $('#total').val(price);
+                }
+            });
+
+            $('#add').on("click",function() {
+                var $qty = $('#qty');
+                var current = parseInt($qty.val());
+                $qty.val(current+1);
+                $('#total').val(price*(current+1));
+            });
+        });
+
+        $('.getEmpty').click(function(){
+            $('.stockAlert').removeClass('d-none');
+            $('.qty-set').addClass('d-none');
+            $('#CartToastBtn').attr('disabled','disabled');
+            $('#buyBtn').attr('disabled','disabled');
+            $('#mCartToast').attr('disabled','disabled');
+            $('#mBuyBtn').attr('disabled','disabled');
+            $('#qtyRemind').addClass('d-none');
+            $('.qty-set ~ p').removeClass('d-none');
+
+            var price = parseFloat($('#price').text());
+            $('#total').val('0');
+        })
+        $('.getAvailable').click(function(){
+            $('.stockAlert').addClass('d-none');
+            $('.qty-set').removeClass('d-none');
+            $('#qty').val('1');
+            $('#CartToastBtn').removeAttr('disabled');
+            $('#buyBtn').removeAttr('disabled');
+            $('#mCartToast').removeAttr('disabled','disabled');
+            $('#mBuyBtn').removeAttr('disabled','disabled');
+            $('.qty-set').removeClass('d-none');
+            $('#qtyRemind').addClass('d-none');
+            $('.qty-set ~ p').removeClass('d-none');
+
+            var price = parseFloat($('#price').text());
+            $('#total').val(price);
+        })
     </script>
   </body>
 </html>
