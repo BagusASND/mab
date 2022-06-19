@@ -33,12 +33,8 @@ hr.dashed {
     background: none;
 }
 .h-20 {height: 20px;}
-
-.form-control:focus {
-    outline: none !important;
-    box-shadow: none !important;
-    border-color: #ced4da;
-}
+.h-40 {height: 40px;}
+.h-60 {height: 60px;}
 
 a.disabled {
     pointer-events: none;
@@ -227,6 +223,36 @@ a.disabled {
     box-shadow: none !important;
     outline: none !important;
 }
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #ced4da;
+}
+.copy-value-input {
+    color: #444444;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+}
+.copy-value-input.resi {
+    width: 100px;
+}
+.btn-copy {
+    position: relative;
+}
+.btn-copy span {
+    background-color: #484747;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 2px 5px;
+    position: absolute;
+    top: -19px;
+    right: -4px;
+    display: none;
+}
+.btn-copy:hover span {
+    display: block;
+}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -238,4 +264,17 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.password-toggle i:last-child {
+    display: none;
+}
+.password-toggle i:first-child {
+    display: block;
+}
+.password-toggle.on i:last-child {
+    display: block;
+}
+.password-toggle.on i:first-child {
+    display: none;
 }

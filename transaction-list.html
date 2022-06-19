@@ -209,7 +209,9 @@
                         <div class="account-nav-tabs d-flex mt-md-5 horizontal-scrolling pt-2">
                             <a href="transaction-list.html" class="text-decoration-none me-3 px-4 active">Semua</a>
                             <a href="transaction-list-waiting.html" class="text-decoration-none me-3 px-4">Menunggu Pembayaran</a>
-                            <a href="transaction-list-progress.html" class="text-decoration-none me-3 px-4">Dalam Proses</a>
+                            <a href="transaction-list-progress.html" class="text-decoration-none me-3 px-4">Menunggu Konfirmasi</a>
+                            <a href="transaction-list-progress.html" class="text-decoration-none me-3 px-4">Menunggu Diproses</a>
+                            <a href="transaction-list-progress.html" class="text-decoration-none me-3 px-4">Sedang Dikirim</a>
                             <a href="transaction-list-done.html" class="text-decoration-none me-3 px-4">Selesai</a>
                             <a href="transaction-list-cancel.html" class="text-decoration-none me-3 px-4">Batal</a>
                         </div>
@@ -217,15 +219,30 @@
                     <div class="row transaction-list-items">
                         <div class="col-12">
                             <div class="card rounded-lg px-3 py-2 mb-3">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <i class="icofont-ui-calendar text-secondary text-xlg"></i>
-                                        <div class="text-xs ms-2">
-                                            <span class="fw7">17 Des 2021</span>
-                                            <p class="text-muted fw3 mb-0">INVOICENUMBER0001</p>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-6">
+                                            <div class="d-flex justify-content-between justify-content-sm-between justify-content-md-start">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="icofont-ui-calendar text-secondary text-xlg"></i>
+                                                    <div class="text-xs ms-2">
+                                                        <span class="fw7">17 Des 2021</span>
+                                                        <p class="text-muted fw3 mb-0">INVOICENUMBER0001</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="badge bg-warning ms-2">Belum dibayar</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-6">
+                                            <div class="d-flex align-items-center justify-content-md-end my-2 my-sm-2 my-md-0">
+                                                <i class="icofont-wall-clock me-1"></i>
+                                                <span class="text-muted text-sm me-2">Bayar sebelum</span>
+                                                <span class="text-tertiary text-sm fw7">18 des 2021, 17:00</span>                                                
+                                            </div>
                                         </div>
                                     </div>
-                                    <span class="badge bg-warning">Dalam proses</span>
                                 </div>
                                 <div class="row align-items-center">
                                     <div class="col-md-6 col-sm-12 col-12">
@@ -252,15 +269,23 @@
                                 <div class="position-absolute w-100 h-100 top-0 start-0 d-md-none" data-bs-toggle="modal" data-bs-target="#transDetail"></div>
                             </div>
                             <div class="card rounded-lg px-3 py-2 mb-3">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <i class="icofont-ui-calendar text-secondary text-xlg"></i>
-                                        <div class="text-xs ms-2">
-                                            <span class="fw7">17 Des 2021</span>
-                                            <p class="text-muted fw3 mb-0">INVOICENUMBER0001</p>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-6">
+                                            <div class="d-flex justify-content-between justify-content-sm-between justify-content-md-start">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="icofont-ui-calendar text-secondary text-xlg"></i>
+                                                    <div class="text-xs ms-2">
+                                                        <span class="fw7">17 Des 2021</span>
+                                                        <p class="text-muted fw3 mb-0">INVOICENUMBER0001</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="badge bg-success ms-2">Selesai</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <span class="badge bg-success">Selesai</span>
                                 </div>
                                 <div class="row align-items-center">
                                     <div class="col-md-6 col-sm-12 col-12">
@@ -287,15 +312,23 @@
                                 <div class="position-absolute w-100 h-100 top-0 start-0 d-md-none" data-bs-toggle="modal" data-bs-target="#transDetail"></div>
                             </div>
                             <div class="card rounded-lg px-3 py-2 mb-3">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <i class="icofont-ui-calendar text-secondary text-xlg"></i>
-                                        <div class="text-xs ms-2">
-                                            <span class="fw7">17 Des 2021</span>
-                                            <p class="text-muted fw3 mb-0">INVOICENUMBER0001</p>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-6">
+                                            <div class="d-flex justify-content-between justify-content-sm-between justify-content-md-start">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="icofont-ui-calendar text-secondary text-xlg"></i>
+                                                    <div class="text-xs ms-2">
+                                                        <span class="fw7">17 Des 2021</span>
+                                                        <p class="text-muted fw3 mb-0">INVOICENUMBER0001</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="badge bg-danger ms-2">Batal</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <span class="badge bg-danger">Batal</span>
                                 </div>
                                 <div class="row align-items-center">
                                     <div class="col-md-6 col-sm-12 col-12">
@@ -315,22 +348,30 @@
                                         <p class="mb-0 fw6">Rp 203.256</p>
                                     </div>
                                     <div class="col-md-12 col-sm-6 col-6 text-end">
-                                        <button type="button" class="btn btn-sm px-4 d-none d-sm-none d-md-inline text-secondary" data-bs-toggle="modal" data-bs-target="#transDetail">Lihat Detail</button>
-                                        <button type="button" class="btn btn-primary btn-sm px-4 position-relative" id="rebuyToast" style="z-index: 1;">Beli Lagi</button>
+                                        <button type="button" class="btn btn-sm px-4 d-none d-sm-none d-md-inline text-secondary" data-bs-toggle="modal" data-bs-target="#transCanceled">Lihat Detail</button>
+                                        <button type="button" class="btn btn-primary-outline btn-sm px-4 position-relative" id="rebuyToast" style="z-index: 1;">Chat Kami</button>
                                     </div>
                                 </div>
-                                <div class="position-absolute w-100 h-100 top-0 start-0 d-md-none" data-bs-toggle="modal" data-bs-target="#transDetail"></div>
+                                <div class="position-absolute w-100 h-100 top-0 start-0 d-md-none" data-bs-toggle="modal" data-bs-target="#transCanceled"></div>
                             </div>
                             <div class="card rounded-lg px-3 py-2 mb-3">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <i class="icofont-ui-calendar text-secondary text-xlg"></i>
-                                        <div class="text-xs ms-2">
-                                            <span class="fw7">17 Des 2021</span>
-                                            <p class="text-muted fw3 mb-0">INVOICENUMBER0001</p>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-6">
+                                            <div class="d-flex justify-content-between justify-content-sm-between justify-content-md-start">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="icofont-ui-calendar text-secondary text-xlg"></i>
+                                                    <div class="text-xs ms-2">
+                                                        <span class="fw7">17 Des 2021</span>
+                                                        <p class="text-muted fw3 mb-0">INVOICENUMBER0001</p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="badge bg-warning ms-2">Menunggu konfirmasi</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <span class="badge bg-warning">Belum dibayar</span>
                                 </div>
                                 <div class="row align-items-center">
                                     <div class="col-md-6 col-sm-12 col-12">
@@ -673,7 +714,7 @@
                         </div>
                         <div class="col-6 text-end">
                             <div class="d-flex align-items-center justify-content-end">
-                                <span class="badge bg-warning">Dalam proses</span>
+                                <span class="badge bg-warning">Belum dibayar</span>
                                 <span class="text-secondary text-xs fw6 ms-3 cursor-pointer" data-bs-toggle="collapse" data-bs-target="#statusOrder" aria-expanded="false" aria-controls="statusOrder">Detail <i class="icofont-simple-right"></i></span>
                             </div>
                         </div>
@@ -685,17 +726,21 @@
                                             <p class="mb-0 text-muted">4 Januari 2022, 15:37 WIB</p>
                                             <p class="mb-0 fw7">Pesanan Selesai</p>
                                         </li>
-                                        <li class="active-state">
+                                        <li class="">
                                             <p class="mb-0 text-muted">3 Januari 2022, 19:00 WIB</p>
-                                            <p class="mb-0 fw7">Pesanan Dikirim</p>
+                                            <p class="mb-0 fw7">Sedang Dikirim</p>
+                                        </li>
+                                        <li class="">
+                                            <p class="mb-0 text-muted">3 Januari 2022, 19:00 WIB</p>
+                                            <p class="mb-0 fw7">Menunggu Diproses</p>
                                         </li>
                                         <li class="">
                                             <p class="mb-0 text-muted">3 Januari 2022, 18:20 WIB</p>
-                                            <p class="mb-0 fw7">Pesanan Terkonfirmasi</p>
+                                            <p class="mb-0 fw7">Menunggu Konfirmasi</p>
                                         </li>
-                                        <li class="">
+                                        <li class="active-state">
                                             <p class="mb-0 text-muted">3 Januari 2022, 17:06 WIB</p>
-                                            <p class="mb-0 fw7">Pesanan Dibuat</p>
+                                            <p class="mb-0 fw7">Menunggu Pembayaran</p>
                                         </li>
                                   </ul>
                                 </div>
@@ -744,7 +789,13 @@
                     </div>
                     <div class="row text-sm mb-3">
                         <div class="col-3 text-muted">No. Resi</div>
-                        <div class="col-9">0092876473674 <i class="icofont-ui-copy ms-2 cursor-pointer" id="copyResi"></i></div>
+                        <div class="col-9">
+                            <input type="text" value="0092876473674" id="copyValue" class="copy-value-input resi" readonly>
+                            <button id="copyResi" onclick="getCopyResi()" class="btn text-sm btn-copy">
+                                <i class="icofont-ui-copy"></i>
+                                <span>Copy</span>
+                            </button>
+                        </div>
                     </div>
                     <div class="row text-sm mb-3">
                         <div class="col-3 text-muted">Alamat</div>
@@ -794,6 +845,145 @@
             </div>
         </div>
     </div>
+    
+    <!-- Detail Transaksi Batal -->
+    <div class="modal fade fade-top full-sheet" id="transCanceled" tabindex="-1" aria-labelledby="transDetailLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0 rounded-lg">
+                <div class="modal-header border-0">
+                    <h6 class="modal-title d-flex" id="exampleModalLabel">
+                        <span>Detail Transaksi</span>
+                    </h6>
+                <button type="button" class="btn-close text-xs" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-center text-sm mb-2">
+                        <div class="col-6">
+                            <p class="mb-0 text-muted">No. Invoice</p>
+                        </div>
+                        <div class="col-6 text-end">
+                            <p class="mb-0 fw6 text-secondary">INVOICENUMBER0001</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center text-sm mb-2">
+                        <div class="col-6">
+                            <p class="mb-0 text-muted">Tanggal Pembelian</p>
+                        </div>
+                        <div class="col-6 text-end">
+                            <p class="mb-0">3 Januari 2022, 17:06 WIB</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center text-sm mb-2">
+                        <div class="col-6">
+                            <p class="mb-0 text-muted">Status Pembelian</p>
+                        </div>
+                        <div class="col-6 text-end">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <span class="badge bg-danger">Batal</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="dashed" />
+                    <p class="fw7 mb-4">Detail Produk</p>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="item-checkout list-unstyled mb-0">
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <img src="dist/assets/17f4545d-9f33-454b-bb31-92ae86062240.jpeg">
+                                        <div class="row w-100">
+                                            <div class="col-12 col-sm-12 col-md-9">
+                                                <p class="mb-1 text-sm">SKULL T-shirt short sleeve - Navy | All Size</p>
+                                                <p class="mb-1 text-sm text-muted">1 item (500 g)</p>
+                                                <p class="mb-0 fw6 text-sm">Rp 80.000</p>
+                                                <p class="mb-0 text-lg fw6">Rp 80.000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <img src="dist/assets/b4732221-79a4-4262-8e92-477aff2020af.jpeg">
+                                        <div class="row w-100">
+                                            <div class="col-12 col-sm-12 col-md-9">
+                                                <p class="mb-1 text-sm">OFFLINE T-shirt short sleeve - White | All size</p>
+                                                <p class="mb-1 text-sm text-muted">2 item (1 kg)</p>
+                                                <p class="mb-0 fw6 text-sm"><span class="text-muted text-decoration-line-through fw4 me-2">Rp 80.000</span> Rp 64.000</p>
+                                                <p class="mb-0 text-lg fw6">Rp 128.000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="dashed" />
+                    <p class="fw7 mb-4">Info Pengiriman</p>
+                    <div class="row text-sm mb-3">
+                        <div class="col-3 text-muted">Kurir</div>
+                        <div class="col-9">JNE - JNE OKE</div>
+                    </div>
+                    <div class="row text-sm mb-3">
+                        <div class="col-3 text-muted">No. Resi</div>
+                        <div class="col-9">
+                            <input type="text" value="0092876473674" id="copyValue" class="copy-value-input resi" readonly>
+                            <button id="copyResi" onclick="getCopyResi()" class="btn text-sm btn-copy">
+                                <i class="icofont-ui-copy"></i>
+                                <span>Copy</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row text-sm mb-3">
+                        <div class="col-3 text-muted">Alamat</div>
+                        <div class="col-9">
+                            <p class="mb-0 fw6">Bagus Arisandi</p>
+                            <p class="mb-0">087844658832</p>
+                            <p class="mb-0">Jl. Ragil Kp Bojong Tengah No. 77, RT 005/006, Bantarsari, Rancabungur, Kab. Bogor, Jawa Barat 16310</p>
+                        </div>
+                    </div>
+                    <hr class="dashed" />
+                    <p class="fw7 mb-4">Detail Pembayaran</p>
+                    <div class="row text-sm mb-2">
+                        <div class="col-6 text-muted">Metode Pembayaran</div>
+                        <div class="col-6 text-end fw6">Transfer Bank BCA</div>
+                    </div>
+                    <div class="row text-sm mb-2">
+                        <div class="col-6 text-muted">Total Harga</div>
+                        <div class="col-6 text-end fw6">Rp 208.000</div>
+                    </div>
+                    <div class="row text-sm mb-2">
+                        <div class="col-6 text-muted">Kode Unik</div>
+                        <div class="col-6 text-end fw6">Rp 256</div>
+                    </div>
+                    <div class="row text-sm mb-2">
+                        <div class="col-6 text-muted">Box + Kartu Ucapan</div>
+                        <div class="col-6 text-end fw6">Rp 5.000</div>
+                    </div>
+                    <div class="row text-sm mb-2">
+                        <div class="col-6 text-muted">Ongkos Kirim</div>
+                        <div class="col-6 text-end fw6">Rp 20.000</div>
+                    </div>
+                    <div class="row text-sm mb-2">
+                        <div class="col-6 text-muted">Voucher</div>
+                        <div class="col-6 text-end fw6">-Rp 30.000</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card card-body bg-muted rounded-lg mb-md-3">
+                                <div class="row fw7">
+                                    <div class="col-6">Total Pembayaran</div>
+                                    <div class="col-6 text-end">Rp 203.256</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="dashed" />
+                    <p class="text-center mb-1">Ingin lanjutkan pesanan ini?</p>
+                    <button type="button" class="btn btn-primary-outline w-100">Chat Kami</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Toast Cart -->
     <div class="position-fixed bottom-0 start-50 translate-middle" style="z-index: 11">
@@ -805,7 +995,7 @@
     </div>
 
     <!-- Toast Copy -->
-    <div class="position-fixed bottom-0 start-50 translate-middle" style="z-index: 1056">
+    <div class="position-fixed top-50 start-50 translate-middle" style="z-index: 1056">
         <div id="copyResiRespond" class="toast border-0 rounded-lg" role="alert" aria-live="assertive" aria-atomic="true">
           <div class="toast-body text-center">
             Nomor resi berhasil disalin
@@ -846,6 +1036,16 @@
 
                 toast.show()
             })
+        }
+
+        function getCopyResi() {
+            var copyText = document.getElementById("copyValue");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(copyText.value);
+            
+            var tooltip = document.getElementById("myTooltip");
+            tooltip.innerHTML = "Copied: " + copyText.value;
         }
     </script>
   </body>

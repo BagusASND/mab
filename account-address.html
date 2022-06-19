@@ -217,55 +217,34 @@
                         <a href="account.html" class="text-decoration-none me-3 px-4">Biodata Diri</a>
                         <a href="account-address.html" class="text-decoration-none me-3 px-4 active">Daftar Alamat</a>
                     </div>
-                    <div class="form-check form-address mb-3 ps-0 d-flex align-items-center">
-                        <input class="form-check-input d-none" type="radio" name="addressOption" id="addressOption1" checked>
-                        <label class="form-check-label w-100" for="addressOption1">
-                            <div class="card rounded-lg p-3">
-                                <p class="mb-1 text-sm">
-                                    <span class="fw7">Bagus Arisandi</span> - Alamat Rumah <span class="label bg-primary text-xs rounded-sm p-1 fw5 ms-2">Utama</span>
-                                </p>
-                                <p class="mb-1 text-sm">087844658832</p>
-                                <p class="text-muted text-sm mb-0">Jl. Ragil Kp Bojong Tengah No. 77, RT 005/006, Bantarsari, Rancabungur, Kab. Bogor, Jawa Barat 16310</p>
-                                <div class="d-block text-end text-sm fw6 text-secondary mt-3">
-                                    <span class="border px-1 rounded cursor-pointer">Ubah Alamat</span>
-                                    <span class="border px-1 rounded cursor-pointer">Hapus Alamat</span>
-                                </div>
-                            </div>
-                        </label>
+                    <div class="row mb-4">
+                        <div class="col-12 text-end">
+                            <button type="button" class="btn btn-primary-outline" data-bs-toggle="modal" data-bs-target="#addAddress">Tambah Alamat</button>
+                        </div>
                     </div>
-                    <div class="form-check form-address mb-3 ps-0 d-flex align-items-center">
-                        <input class="form-check-input d-none" type="radio" name="addressOption" id="addressOption2">
-                        <label class="form-check-label w-100" for="addressOption2">
-                            <div class="card rounded-lg p-3">
-                                <p class="mb-1 text-sm">
-                                    <span class="fw7">Bagus Arisandi</span> - Alamat Kantor
-                                </p>
-                                <p class="mb-1 text-sm">087844658832</p>
-                                <p class="text-muted text-sm mb-0">Alfa Tower LT. 24, Jl. Jalur Sutera Barat. No.Kav. 7-9, Panunggangan Tim., Pinang, Kota Tangerang, Banten 15143</p>
-                                <div class="d-block text-end text-sm fw6 text-secondary mt-3">
-                                    <span class="border px-1 rounded cursor-pointer">Ubah Alamat</span>
-                                    <span class="border px-1 rounded cursor-pointer">Hapus Alamat</span>
-                                    <span class="border px-1 rounded cursor-pointer">Jadikan Alamat Utama</span>
-                                </div>
-                            </div>
-                        </label>
+                    <div class="alert alert-warning">Daftar alamat maksimal 2 alamat.</div>
+                    <div class="card rounded-lg p-3 mb-3">
+                        <p class="mb-1 text-sm">
+                            <span class="fw7">Bagus Arisandi</span> - Alamat Rumah <span class="label bg-primary text-xs rounded-sm p-1 fw5 ms-2">Utama</span>
+                        </p>
+                        <p class="mb-1 text-sm">087844658832</p>
+                        <p class="text-muted text-sm mb-0">Jl. Ragil Kp Bojong Tengah No. 77, RT 005/006, Bantarsari, Rancabungur, Kab. Bogor, Jawa Barat 16310</p>
+                        <div class="d-block text-end text-sm fw6 text-secondary mt-3">
+                            <span class="border px-1 rounded cursor-pointer">Ubah Alamat</span>
+                            <span class="border px-1 rounded cursor-pointer" data-bs-toggle="modal" data-bs-target="#deleteAddress">Hapus Alamat</span>
+                        </div>
                     </div>
-                    <div class="form-check form-address mb-3 ps-0 d-flex align-items-center">
-                        <input class="form-check-input d-none" type="radio" name="addressOption" id="addressOption3">
-                        <label class="form-check-label w-100" for="addressOption3">
-                            <div class="card rounded-lg p-3">
-                                <p class="mb-1 text-sm">
-                                    <span class="fw7">Bagus Arisandi</span> - Alamat Rumah Tetangga
-                                </p>
-                                <p class="mb-1 text-sm">087844658832</p>
-                                <p class="text-muted text-sm mb-0">Jl. Ragil Kp Bojong Tengah No. 77, RT 005/006, Bantarsari, Rancabungur, Kab. Bogor, Jawa Barat 16310</p>
-                                <div class="d-block text-end text-sm fw6 text-secondary mt-3">
-                                    <span class="border px-1 rounded cursor-pointer">Ubah Alamat</span>
-                                    <span class="border px-1 rounded cursor-pointer">Hapus Alamat</span>
-                                    <span class="border px-1 rounded cursor-pointer">Jadikan Alamat Utama</span>
-                                </div>
-                            </div>
-                        </label>
+                    <div class="card rounded-lg p-3 mb-3">
+                        <p class="mb-1 text-sm">
+                            <span class="fw7">Bagus Arisandi</span> - Alamat Kantor
+                        </p>
+                        <p class="mb-1 text-sm">087844658832</p>
+                        <p class="text-muted text-sm mb-0">Alfa Tower LT. 24, Jl. Jalur Sutera Barat. No.Kav. 7-9, Panunggangan Tim., Pinang, Kota Tangerang, Banten 15143</p>
+                        <div class="d-block text-end text-sm fw6 text-secondary mt-3">
+                            <span class="border px-1 rounded cursor-pointer">Ubah Alamat</span>
+                            <span class="border px-1 rounded cursor-pointer" data-bs-toggle="modal" data-bs-target="#deleteAddress">Hapus Alamat</span>
+                            <span class="border px-1 rounded cursor-pointer" data-bs-toggle="modal" data-bs-target="#primaryAddress">Jadikan Alamat Utama</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -343,6 +322,44 @@
         <p class="text-center text-white text-sm fw2 mb-0 py-4">Copyright &copy; 2022, MABClo.</p>
     </footer>
 
+    <!-- Hapus Alamat -->
+    <div class="modal fade fade-top bottom-fade" id="deleteAddress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+          <div class="modal-content border-0 rounded-lg">
+            <div class="modal-body">
+              <p class="text-center mb-4">Hapus alamat ini?</p>
+              <div class="row">
+                  <div class="col-6 pe-1">
+                      <button type="button" class="btn btn-primary-outline btn-sm w-100" data-bs-dismiss="modal" aria-label="Close">Batal</button>
+                  </div>
+                  <div class="col-6 ps-1">
+                    <button type="button" class="btn btn-primary btn-sm w-100">Hapus</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Alamat Utama -->
+    <div class="modal fade fade-top bottom-fade" id="primaryAddress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+          <div class="modal-content border-0 rounded-lg">
+            <div class="modal-body">
+              <p class="text-center mb-4">Jadikan alamat ini sebagai alamat utama?</p>
+              <div class="row">
+                  <div class="col-6 pe-1">
+                      <button type="button" class="btn btn-primary-outline btn-sm w-100" data-bs-dismiss="modal" aria-label="Close">Batal</button>
+                  </div>
+                  <div class="col-6 ps-1">
+                    <button type="button" class="btn btn-primary btn-sm w-100">Ok</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
     <!-- Cart -->
     <div class="modal fade fade-top full-sheet" id="cartProduct" tabindex="-1" aria-labelledby="cartProductLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -352,7 +369,7 @@
                         <img src="dist/img/icon/bag.png" class="modal-icon-header">
                         <span>Keranjang</span>
                     </h6>
-                <button type="button" class="btn-close text-xs" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close text-xs" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="cart-item-group">
@@ -548,6 +565,113 @@
             </div>
         </div>
     </div>
+
+    <!-- Add New Address -->
+    <div class="modal fade fade-top full-sheet" id="addAddress" tabindex="-1" aria-labelledby="cartProductLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0 rounded-lg">
+                <div class="modal-header border-0">
+                    <h6 class="modal-title d-flex" id="exampleModalLabel">
+                        <span>Tambah Alamat</span>
+                    </h6>
+                    <button type="button" class="btn-close text-xs" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group mb-4">
+                        <label for="labelAlamat" class="fw7 mb-1">Label Alamat</label>
+                        <div class="input-group border rounded overflow-hidden">
+                            <input id="labelAlamat" type="text" class="form-control text-sm border-0">
+                        </div>
+                        <span class="text-muted text-sm">Contoh: Rumah, Kantor, Kost, dll</span>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="name" class="fw7 mb-1">Nama</label>
+                        <div class="input-group border rounded overflow-hidden">
+                            <input id="name" type="text" class="form-control text-sm border-0">
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="telp" class="fw7 mb-1">Nomor Telepon</label>
+                        <div class="input-group border rounded overflow-hidden">
+                            <input id="telp" type="text" class="form-control text-sm border-0">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="form-group mb-4">
+                                <label for="prov" class="fw7 mb-1">Provinsi</label>
+                                <div class="input-group border rounded overflow-hidden">
+                                    <select id="prov" class="form-select text-sm border-0">
+                                        <option>Provinsi 1</option>
+                                        <option>Provinsi 2</option>
+                                        <option>Provinsi 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="form-group mb-4">
+                                <label for="kota" class="fw7 mb-1">Kota</label>
+                                <div class="input-group border rounded overflow-hidden">
+                                    <select id="kota" class="form-select text-sm border-0">
+                                        <option>Kota 1</option>
+                                        <option>Kota 2</option>
+                                        <option>Kota 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="form-group mb-4">
+                                <label for="kecamatan" class="fw7 mb-1">Kecamatan</label>
+                                <div class="input-group border rounded overflow-hidden">
+                                    <select id="kecamatan" class="form-select text-sm border-0">
+                                        <option>Kecamatan 1</option>
+                                        <option>Kecamatan 2</option>
+                                        <option>Kecamatan 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6">
+                            <div class="form-group mb-4">
+                                <label for="kelurahan" class="fw7 mb-1">Kelurahan</label>
+                                <div class="input-group border rounded overflow-hidden">
+                                    <select id="kelurahan" class="form-select text-sm border-0">
+                                        <option>Kelurahan 1</option>
+                                        <option>Kelurahan 2</option>
+                                        <option>Kelurahan 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="detailAlamat" class="fw7 mb-1">Detail Alamat</label>
+                        <div class="input-group border rounded overflow-hidden">
+                            <input id="detailAlamat" type="text" class="form-control text-sm border-0">
+                        </div>
+                        <span class="text-muted text-sm">Contoh: Nama jalan, nomor bangunan/lantai/rumah</span>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Jadikan alamat utama
+                        </label>
+                    </div>
+                    <div class="row my-3 justify-content-center">
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 pe-1">
+                            <button type="button" class="btn btn-primary-outline w-100" data-bs-dismiss="modal">Batal</button>
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-4 col-lg-3 ps-1">
+                            <button type="button" class="btn btn-primary w-100">Simpan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     
 

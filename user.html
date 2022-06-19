@@ -222,23 +222,25 @@
                                 </div>
                             </div>
                             <div class="form-group pb-4 mb-4">
-                                <label for="password" class="fw7 mb-1">Password</label>
+                                <label for="passwordVal" class="fw7 mb-1">Password</label>
                                 <div class="input-group border rounded overflow-hidden">
-                                    <input id="password" type="password" class="form-control text-sm border-0">
-                                    <span class="input-group-text bg-white text-muted border-0">
+                                    <input id="passwordVal" type="password" class="form-control text-sm border-0">
+                                    <button type="button" class="btn py-0 px-2 text-muted password-toggle" onclick="changeVisibility()">
+                                        <i class="icofont-eye-blocked"></i>
                                         <i class="icofont-eye"></i>
-                                    </span>
+                                    </button>
                                 </div>
                                 <a href="" class="text-sm text-tertiary text-decoration-none float-end mt-1">Lupa password?</a>
                             </div>
-                            <a href="account.html" class="btn btn-primary btn-sm w-100 d-none d-sm-none d-md-block">Masuk</a>
+                            <a href="account.html" class="btn btn-primary d-none d-sm-none d-md-block">Masuk</a>
                             <a href="account-menu.html" class="btn btn-primary btn-sm w-100 d-md-none">Masuk</a>
                         </div>
                         <div class="col-12 col-sm-12 col-md-6 pb-5 text-center">
-                            <span class="text-sm text-muted">atau</span>
-                            <p class="fw6 mt-4">Mau belanja tanpa login? Gunakan whatsapp</p>
-                            <a href="" class="btn btn-wa btn-sm px-5">
-                                <i class="icofont-brand-whatsapp"></i> Whatsapp
+                            <p class="fw6">Butuh bantuan? Hubungi kami melalui tombol di bawah ini.</p>
+                            <a href="" class="text-decoration-none text-primary">
+                                <div class="btn border px-5">
+                                    <i class="icofont-chat me-1"></i> Chat Kami
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -576,5 +578,18 @@
     <script src="dist/js/jquery-3.2.1.min.js"></script>
     <script src="dist/plugin/slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script src="dist/js/mab.js" type="text/javascript"></script>
+    
+    <script>
+        function changeVisibility() {
+            var x = document.getElementById("passwordVal");
+            if (x.type === "password") {
+                x.type = "text";
+                $(".password-toggle").addClass("on");
+            } else {
+                x.type = "password";
+                $(".password-toggle").removeClass("on");
+            }
+        }
+    </script>
   </body>
 </html>
