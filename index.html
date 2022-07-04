@@ -110,7 +110,7 @@
                             <button type="button" class="btn position-relative">
                                 <img src="dist/img/icon/search.png" data-bs-toggle="collapse" data-bs-target="#searchExpand" aria-expanded="false" aria-controls="searchExpand">
                                 <div class="collapse collapse-horizontal position-absolute" id="searchExpand">
-                                    <div class="input-group">
+                                    <div class="input-group" style="width: 300px;">
                                         <span class="input-group-text">
                                             <img src="dist/img/icon/search.png">
                                         </span>
@@ -406,7 +406,7 @@
                                         <p class="mb-0 me-3">Produk pilihan dalam waktu terbatas</p>
                                         <span class="timer-count text-sm text-white fw6">
                                             <i class="icofont-clock-time me-1"></i>
-                                            <span>03 : 20 : 07</span>
+                                            <span id="flashCount"></span>
                                         </span>
                                     </div>
                                 </div>
@@ -1499,6 +1499,34 @@
             centerMode: true,
             focusOnSelect: true
         });
+
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jul 6, 2022 10:27:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+            
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+            
+        // Time calculations for days, hours, minutes and seconds
+        var hours = Math.floor(distance / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+        // Output the result in an element with id="flashCount"
+        document.getElementById("flashCount").innerHTML = hours + " : "
+        + minutes + " : " + seconds;
+            
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("flashCount").innerHTML = "Selesai";
+        }
+        }, 1000);
     </script>
   </body>
 </html>
