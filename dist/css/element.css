@@ -483,28 +483,22 @@ footer .logo-footer {
     font-weight: 700;
 }
 .size-option {
-    width: fit-content;
     padding: 0;
-    position: relative;
-    margin: 0;
-    display: flex;
-    align-items: center;
     margin-right: 10px;
 }
 .size-option .form-check-input {
-    width: 32px;
-    height: 32px;
-    margin: 0;
-    border: solid 1px #A4A1A1;
-    background-image: none;
-    background-color: #ffffff;
+    visibility: hidden;
 }
 .size-option .form-check-label {
-    position: absolute;
-    left: 0;
-    width: 32px;
-    text-align: center;
+    border-radius: 16px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    min-width: 32px;
     font-weight: 600;
+    border: solid 1px #A4A1A1;
     cursor: pointer;
 }
 .size-option .form-check-input:checked {
@@ -514,6 +508,8 @@ footer .logo-footer {
 }
 .size-option .form-check-input:checked ~ .form-check-label {
     color: #ffffff;
+    background-color: #FB9257;
+    border-color: #FB9257;
 }
 .detail-product-page .option-section li {
     border: solid 1px #A4A1A1;
@@ -625,6 +621,16 @@ footer .logo-footer {
     height: 400px;
     overflow-y: scroll;
     overflow-x: auto;
+}
+.list-suggest-address li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #444444;
+    font-weight: 600;
+    padding: 16px 0;
+    border-bottom: 1px solid #dee2e6;
 }
 
 .cart-toast {
